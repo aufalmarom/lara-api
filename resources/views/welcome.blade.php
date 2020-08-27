@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Rest API - Nakama OOB Mandiri</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,18 +81,17 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Nakama OOB <br> mandiri
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{route('getall')}}">Get All</a>
+                    <a href="{{route('getbyid', 1)}}">Get By ID 1</a>
+                    <a href="{{route('getbyid', 2)}}">Get By ID 2</a>
+                    <a href="{{route('getbyid', 3)}}">Get By ID 3</a>
+                    <a href="{{route('getbyid', 4)}}">Get By ID 4</a>
+                    <a href="{{route('getbyid', 5)}}">Get By ID 5</a>
+                    <a href="{{route('getbyid', 6)}}">Get By ID 6</a>
                 </div>
             </div>
         </div>
