@@ -41,7 +41,7 @@ php artisan serve
 
 ## Contact Me
 
-If you any problems, feel free ask to me via [aufalmarom23@gmail.com](mailto:aufalmarom23@gmail.com). 
+If you found any problems, feel free ask to me via [aufalmarom23@gmail.com](mailto:aufalmarom23@gmail.com). 
 
 
 ## Disclaimer
