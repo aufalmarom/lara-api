@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('nakama', 'NakamaController@index');
+Route::get('nakama/{id}', 'NakamaController@show');
+Route::post('nakama', 'NakamaController@store');
+Route::put('nakama/{id}', 'NakamaController@update');
+Route::delete('nakama/{id}', 'NakamaController@destroy');
