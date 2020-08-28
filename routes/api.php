@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix'=>'v1'], function(){
+    Route::get('/nakama', 'NakamaController@index')->name('getall');
+    Route::get('/nakama/{id}', 'NakamaController@show')->name('getbyid');
+    Route::post('/nakama', 'NakamaController@store')->name('create');
+    Route::put('/nakama/{id}', 'NakamaController@update')->name('update');
+    Route::delete('/nakama/{id}', 'NakamaController@destroy')->name('delete');
 });
+
