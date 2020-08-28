@@ -54,10 +54,10 @@ class NakamaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $employee = Employee::findOrFail($id);
-        $employee->update($request->all());
+        $nakama = Nakama::findOrFail($id);
+        $nakama->update($request->all());
 
-        return $employee;
+        return $nakama;
     }
 
     /**
@@ -68,8 +68,8 @@ class NakamaController extends Controller
      */
     public function destroy($id)
     {
-        $employee = Employee::findOrFail($id);
-        $employee->delete();
+        $nakama = Nakama::findOrFail($id);
+        $nakama->delete();
 
         return 204;
     }
